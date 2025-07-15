@@ -1,0 +1,15 @@
+import random
+
+nombres = ['Ana', 'Nacho', 'Gabriel', 'Marco', 'Roberto', 'rigoberto', 'Juan', 'Maria', 'Elena', 'Pancrasio']
+
+apellidos = ['Gonzales', 'Baltar', 'Muñoz', 'Sacco', 'Morales', 'Perez', 'Lopez', 'Gomez', 'Laurence', 'Peralta']
+
+nombres_cant = int(input('Cuantos nombre de usuario desea crear? '))
+
+
+for i in range(nombres_cant):
+    nombre = random.choice(nombres)
+    apellido = random.choice(apellidos)
+    numeros = random.randint(0, 1000)
+    usuario_final = f'{nombre.lower()}.{apellido.lower()}.{numeros}'
+    print(usuario_final)
